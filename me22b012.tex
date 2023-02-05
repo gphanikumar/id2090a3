@@ -1,0 +1,40 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Adithya Rama Varma}
+\title{\textbf{me22b012.tex}}
+\begin{document}
+
+\maketitle
+
+\section{me22b012 }
+\begin{equation}
+{\tau}(x)=\int_{0}^{\infty}{\text{exp}(-t)}{\text (t^{\text x-1})dt}
+\end{equation}
+It is a extension of factorial function to complex numbers.It is defined by a convergent improper integral.
+If the real part of the complex number z is strictly positive , then the integral converges absolutely, and is known as the Euler integral of the second kind.
+The notation tau is due to Legendre.
+for every positive integer n
+\begin{equation}
+{\tau}(n)=(n-1)!
+\end{equation}
+There exist the recuirsion relation 
+\begin{equation}
+{\tau}(z+1)=z{\tau}(z)
+\end{equation}
+This is derived by integrating in parts
+now the gamma function can also be represented in the form 
+\begin{equation}
+n!=\int_{0}^{1}{\text (- log x)^{\text -n}dx}
+\end{equation}
+The gamma function can be related to the first Euclerian integral or the beta function as follows
+\begin{equation}
+B(m,n)=\frac {{\tau}(m) {\tau}(n)}{{\tau}(m+n)}
+\end{equation}
+\emph{Name-T N Adithya Rama Varma }\\
+\emph{GitHub id-thedarkknight-012}\\
+\footnote{reference\url{https://www.maa.org/sites/default/files/pdf/upload_library/22/Chauvenet/Davis.pdf}}
+\footnote{reference\url{https://www.roma1.infn.it/~bonvini/math/Marco_Bonvini__Gamma_function.pdf}}
+\end{document}
