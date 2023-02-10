@@ -1,0 +1,27 @@
+\section{Cycloidal Motion in Electromagnetic field:}
+
+Name: Chinmay Kulkarni\\
+Roll Number: ME22B147\\
+GitHub Username: chinmay-1491 \\
+
+Consider a uniform and constant magnetic field B such that$$\vec{B} = |B|\hat{x}$$ and a uniform and constant electric field E such that$$\vec{E} = |E|\hat{z}$$. If a point particle of charge \emph{q} and mass \emph{m} released at rest from the origin. It's equation of motion is given by:
+\begin{equation}
+    \emph{y}(t)=\frac{-E}{\omega\cdot B}\cdot sin(\omega\cdot t) + \frac{E}{B}\cdot t 
+\end{equation}
+\begin{equation}
+    \emph{z}(t)=\frac{-E}{\omega\cdot B}\cdot cos(\omega\cdot t) + \frac{E}{\omega\cdot B}
+\end{equation}
+These equations of motions are obtained by solving:\\
+$\vec{F}$=\emph{q}\cdot $\vec{E}$ + \emph{q}\cdot($\vec{v}$\times$\vec{B}$) \\
+where $\vec{v}$ is the velocity vector.
+Observations:
+\begin{enumerate}
+    \item Since there is no force along the \emph{x} axis, the motion is confined to the \emph{yz} plane.
+    \item The solution to the equation of motion is a cycloid, which interestingly also happens to be:
+    \begin{enumerate}
+      \item The path traced by a point on a rolling cylinder.
+      \item The solution to the Brachistrone problem.
+    \end{enumerate}
+\end{enumerate}
+Reference for the above equation:
+\url{https://physicspages.com/pdf/Electrodynamics/Cycloid%20motion%20in%20crossed%20electric%20and%20magnetic%20fields.pdf}
