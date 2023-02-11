@@ -1,0 +1,34 @@
+\section{Roll number: ME22B067}
+Name: A.A.Avantika \\
+Github user id: Avantika310
+\section{Moment of Inertia}
+
+The term moment of inertia was introduced by Leonhard Euler in his book Theoria motus corporum solidorum seu rigidorum in 1765
+
+Moment of inertia is the product of mass of the particle with the square of its distance from the axis of the rotation.The SI unit of moment of inertia is\[kg m^2\] 
+
+\[I = mr^2\]
+
+\section{Moment of Inertia of some basic objects}
+
+\[Ring = mr^2\]
+\[Disc = mr^2/2\]
+\[Hollow sphere = 2/3 \{mr^2\}\]
+\[Solid sphere = 2/5 \{mr^2\}\]
+
+\section{Parallel Axis Theorem}
+According to the Parallel Axis Theorem ,
+
+The moment of inertia of a body about an axis parallel to the body passing through its centre is equal to the sum of moment of inertia of the body about the axis passing through the centre and product of the mass of the body times the square of the distance between the two axes.
+
+Formula :
+\[I = Ic + mr^2\]
+where,
+I = moment of inertia of the body
+
+Ic = moment of inertia about the center
+
+M = mass of the body
+r = distance between 2 axes
+\footnote{https://www.geeksforgeeks.org/moment-of-inertia}
+\footnote{https://en.wikipedia.org/wiki/Moment_of_inertia}
