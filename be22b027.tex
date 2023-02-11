@@ -1,1 +1,303 @@
+\documentclass[12pt]{report}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+
+\usepackage[sort]{natbib}
+\bibliographystyle{sb}
+    \bibpunct[:]{(}{)}{;}{a}{}{,}
+\usepackage[colorlinks=false,hidelinks]{hyperref}  
+
+\usepackage{doi} 
+
+\usepackage{gb4e}\noautomath 
+
+
+
+\usepackage[T1]{fontenc} 
+\usepackage{fontspec,xltxtra,xunicode} 
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{graphicx}
+
+\usepackage{anyfontsize}
+
+\usepackage{booktabs} 
+\usepackage{colortbl}
+
+\usepackage{titlesec} 
+
+\DeclareGraphicsExtensions{.pdf,.png}
+
+\hypersetup{linkcolor=black,
+            citecolor=black,
+            urlcolor=black} 
+
+\setlength{\bibsep}{1.25pt}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{url}
+
+ 
+\usepackage{parskip} 
+    \parskip0.5ex
+ 
+
+\renewcommand{\contentsname}{Table of contents}
+\renewcommand{\listfigurename}{List of figures} 
+ 
+\usepackage{xcolor}
+    \definecolor{dgreen}{rgb}{0.,0.6,0.}
+    \definecolor{ochre}{cmyk}{0, .42, .83, .20}
+
+\let\eachwordone=\sl
+\singlegloss
+\exewidth{(5.65)}
+\addtolength{\footnotesep}{10pt}
+\addtolength{\bibsep}{4pt}
+
+\newcommand{\sref}[1]{\S\ref{#1}}
+\newcommand{\srefs}[2]{\S\S\ref{#1}--\ref{#2}}
+\newcommand{\eref}[1]{(\thechapter.\ref{#1})}
+\newcommand{\erefs}[2]{\eref{#1}--\eref{#2}}
+\newcommand{\earef}[2]{(\ref{#1}\ref{#2})}
+\newcommand{\sbref}[1]{(\S\ref{#1})}
+\newcommand{\reff}[1]{\hspace*{\fill}{\mbox{#1}}}
+\newcommand{\refex}[2][]{\hfill\citep[#1]{#2}}
+\newcommand{\reftex}[1]{\hspace*{\fill}\mbox{(#1)}}
+\newcommand{\tref}[1]{Table~\ref{#1}\xspace}
+\newcommand{\tpref}[1]{Table~\ref{#1} on page~\pageref{#1}\xspace}
+\newcommand{\trefs}[2]{Tables~\ref{#1} and~\ref{#2}\xspace}
+\newcommand{\fref}[1]{Figure~\ref{#1}\xspace}
+\newcommand{\chref}[1]{Chapter~\ref{#1}\xspace}
+\newcommand{\chrefs}[2]{Chapters~\ref{#1}--\ref{#2}\xspace}
+\newcommand{\pref}[1]{page~\pageref{#1}\xspace}
+\newcommand{\prefs}[2]{pages~\pageref{#1}--\pageref{#2}\xspace}
+\newcommand{\aref}[1]{Appendix~\ref{#1}\xspace}
+
+\newcommand{\qcite}[1]{\citeauthor{#1}'s (\citeyear{#1})\xspace}
+
+\newcommand{\comm}[1]{\textsl{\textbf{\large{{#1}}}}}
+\newcommand{\tit}[1]{\textit{{#1}}}
+\newcommand{\tbf}[1]{\textbf{{#1}}}
+\newcommand{\tsc}[1]{\textsc{{#1}}}
+\newcommand{\fno}[1]{\footnote{\small #1}}
+\newcommand{\nfno}[1]{\footnote{\tbf{#1}}}
+\newcommand{\ipa}[1]{\textipa{{#1}}}
+\newcommand{\ul}[1]{\underline{{#1}}}
+\renewcommand{\>}{\ensuremath >\xspace}
+\newcommand{\<}{\ensuremath <\xspace}
+\newcommand{\ortho}[1]{\ensuremath{<}#1\ensuremath{>}}
+\newcommand{\uar}{\ensuremath\uparrow\xspace}
+
+\newcommand{\var}{\ensuremath{\sim}\xspace}
+\newcommand{\itipa}[1]{\textipa{\textsl{#1}}}
+
+\newcommand{\tup}[1]{\textup{{#1}}}
+\newcommand{\eg}{e.g.\@\xspace}
+\newcommand{\ie}{i.e.\@\xspace}
+\newcommand{\nd}{n.d.\@\xspace}
+\newcommand{\cf}{cf.\@\xspace}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{0pt}
+        \makeatletter    
+        \Huge
+        \textbf{\@ Clausius–Clapeyron relation}\\
+        \vspace{1ex}
+        \Large
+        
+         
+        \vspace{5ex}
+        \textbf{Author: Pranav Mane}
+
+        \vspace{0ex}
+        Roll no : BE22B027
+        
+        GitHub user ID: pranavpm99
+        \vspace{5ex}
+    
+        \textbf{Advisor: Gandham Phani Kumar}
+        \vfill
+       
+        \large{Submitted to the faculty of the Introduction to scientific programming ID2090}\\
+        \vspace{3ex}
+               \includegraphics[width=0.275\textwidth]{245-2451831_iit-madras-logo.png}\\    
+    
+        \vspace{2ex}
+        \large
+        \textsc{IIT MADRAS}\\
+        \textsc{}\\
+        \vspace{.5ex}
+        \normalsize DATE SUBMITTED\\
+        \footnotesize \textcolor{gray}{[feb 11, 2023 ]}
+        \makeatother
+    \end{center}
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\addtocontents{toc}{\vspace{0pt}\protect\noindent\parbox[t]{\textwidth}{\normalsize\textcolor{black}{\textbf{Front matter}}}\par}
+
+\clearpage
+\phantomsection\addcontentsline{toc}{section}{Abstract}
+\chapter*{Abstract}
+\addtocounter{page}{-1}
+
+\emph{}
+
+The Clausius–Clapeyron relation, named after Rudolf Clausius and Benoît Paul Émile Clapeyron, specifies the temperature dependence of pressure, most importantly vapor pressure, at a discontinuous phase transition between two phases of matter of a single constituent. Its relevance to meteorology and climatology is the increase of the water-holding capacity of the atmosphere by about 7 percent for every 1 °C (1.8 °F) rise in temperature.
+\stepcounter{page}
+\singlespacing
+\setstretch{0.95}
+\tableofcontents\addcontentsline{toc}{section}{Table of contents}
+\setstretch{2}
+\normalsize
+\newpage
+\pagenumbering{arabic}
+\doublespacing
+\setlength{\parindent}{1.5em}
+\chapter{Introduction}\
+\section {Definition}
+\subsection{Exact Clapeyron Equation}
+On a pressure–temperature (P–T) diagram, for any phase change the line separating the two phases is known as the coexistence curve. The Clapeyron relation gives the slope of the tangents to this curve. Mathematically,
+
+${\displaystyle {\frac {\mathrm {d} P}{\mathrm {d} T}}={\frac {L}{T\,\Delta v}}={\frac {\Delta s}{\Delta v}},}
+$
+
+where 
+
+${\displaystyle {\frac {\mathrm {d} P}{\mathrm {d} T}}}
+$
+ is the slope of the tangent to the coexistence curve at any point, 
+
+L is the specific latent heat, 
+
+T is the temperature, 
+
+${\Delta v}$ is the specific volume change of the phase transition, and 
+
+${\Delta s}$ is the specific entropy change of the phase transition.
+\newpage
+\subsection{Clausius-Clapeyron Equation}
+The Clausius–Clapeyron equation applies to vaporization of liquids where vapor follows ideal gas law and liquid volume is neglected as being much smaller than vapor volume V. It is often used to calculate vapor pressure of a liquid.[5]
+
+
+${\displaystyle {\frac {\mathrm {d} P}{\mathrm {d} T}}={\frac {PL}{T^{2}R}}}
+$
+${\displaystyle {V}={\frac {RT}{P}}}
+$
+The equation expresses this in a more convenient form just in terms of the latent heat, for moderate temperatures and pressures.
+
+\section{Derivations}
+\subsection{Derivation from state postulate}
+Using the state postulate, take the
+
+specific entropy s for a homogeneous substance to be a function of
+
+specific volume v
+
+and temperature T.
+
+${\displaystyle \mathrm {d} s=\left({\frac {\partial s}{\partial v}}\right)_{T}\,\mathrm {d} v+\left({\frac {\partial s}{\partial T}}\right)_{v}\,\mathrm {d} T.}
+$
+
+The Clausius–Clapeyron relation characterizes behavior of a closed system during a phase change at constant temperature and pressure. Therefore,
+
+${\displaystyle \mathrm {d} s=\left({\frac {\partial s}{\partial v}}\right)_{T}\,\mathrm {d} v.}
+$
+Using the appropriate Maxwell relation gives 
+${\displaystyle \mathrm {d} s=\left({\frac {\partial P}{\partial T}}\right)_{v}\,\mathrm {d} v}
+$
+
+where 
+
+P is the pressure. Since pressure and temperature are constant, the derivative of pressure with respect to temperature does not change.Therefore, the partial derivative of specific entropy may be changed into a total derivative
+
+${\displaystyle \mathrm {d} s={\frac {\mathrm {d} P}{\mathrm {d} T}}\,\mathrm {d} v}
+$
+and the total derivative of pressure with respect to temperature may be factored out when integrating from an initial phase 
+\newpage
+$
+\alpha
+$
+to a final phase 
+$
+\beta
+$
+to obtain
+${\displaystyle {\frac {\mathrm {d} P}{\mathrm {d} T}}={\frac {\Delta s}{\Delta v}}}
+$
+
+where
+${\displaystyle \Delta s\equiv s_{\beta }-s_{\alpha }} +
+$
+and 
+
+$
+\Delta v\equiv v_{\beta}-v_{\alpha}
+$
+are respectively the change in specific entropy and specific volume. Given that a phase change is an internally reversible process, and that our system is closed, the first law of thermodynamics holds
+${\displaystyle \mathrm {d} u={\delta} q+{\delta} w=T\;\mathrm {d} s-P\;\mathrm {d} v}
+$
+where 
+u is the internal energy of the system. Given constant pressure and temperature (during a phase change) and the definition of specific enthalpy ℎ
+h, we obtain
+$
+$
+${\displaystyle \mathrm {d} h=T\;\mathrm {d} s+v\;\mathrm {d} P}
+$
+${\displaystyle \mathrm {d} h=T\;\mathrm {d} s}
+{\mathrm  {d}}s={\frac  {{\mathrm  {d}}h}{T}}
+$
+Given constant pressure and temperature (during a phase change), we obtain
+
+${\delta} s={\frac  {\Delta h}{T}}
+$
+Substituting the definition of specific latent heat 
+$
+L={\delta} h
+$
+gives
+$
+{\Delta} s={\frac  {L}{T}}
+$
+Substituting this result into the pressure derivative given above (
+${\displaystyle \mathrm {d} P/\mathrm {d} T={\Delta} s/{\Delta} v}), 
+$
+we obtain
+${\displaystyle {\frac {\mathrm {d} P}{\mathrm {d} T}}={\frac {L}{T\,\Delta v}}.}
+$
+This result (also known as the Clapeyron equation) equates the slope 
+${\mathrm{d}P}/{\mathrm{d}T}
+$
+
+of the coexistence curve
+P(T) to the function 
+${\displaystyle L/(T\,{\Delta} v)}
+$of the specific latent heat 
+L, the temperature 
+T, and the change in specific volume 
+${\Delta} v.
+$
+Instead of the specific, corresponding molar values may also be used.
+\subsection{Clausius-clapeyron equation}
+$ln({\frac{P1}{P2}})=ΔHvapR{\frac{T1}{T2}}
+$
+where P1 and P2 are the vapor pressures at two temperatures T1
+ and T2.This Equation is known as the Clausius-Clapeyron Equation and allows us to estimate the vapor pressure at another temperature, if the vapor pressure is known at some temperature, and if the enthalpy of vaporization is known.
+ \section{References}
+ \footnote{Yau, M.K.; Rogers, R.R. (1989). Short Course in Cloud Physics (3rd ed.). Butterworth–Heinemann. ISBN 978-0-7506-3215-7.}
+\footnote{\url{https://en.wikipedia.org/wiki/Clausius\%E2\%80\%93Clapeyron_relation}}
+\footnote{\url{https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch14/clausius.php}
+}
+\clearpage\singlespacing
+
+\end{document}
+
+
 
