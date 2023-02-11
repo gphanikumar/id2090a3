@@ -1,0 +1,34 @@
+\section{ME22B189}
+\subsection{The Minimal Surface Equation}
+"The minimal surface equation somehow encodes the beautiful soap films that form on wire boundaries when you dip them in soapy water," said mathematician Frank Morgan of Williams College. "The fact that the equation is 'nonlinear,' involving powers and products of derivatives, is the coded mathematical hint for the surprising behavior of soap films. This is in contrast with more familiar linear partial differential equations, such as the heat equation, the wave equation, and the Schrödinger equation of quantum physics."
+The minimal surface equation (MSE) \cite{Simon1997} for functions u: $\Omega \rightarrow \mathbb{R}$,  $\Omega$ a domain of $\mathbb{R}^2$, can be written
+$\left( {1 + u_{}^2} \right){u_{xx}} - 2{u_x}{u_y}{u_{xy}} + \left( {1 + u_x^2} \right){u_{yy}} = 0$
+or equivalently
+\begin{equation}
+ {u_{xx}} + {u_{yy}} - {\left( {1 + |Du{|^2}} \right)^{ - 1}}\left( {u_x^2{u_{xx}} + 2{u_x}{u_y}{u_{xy}} + u_y^2{u_{yy}}} \right) = 0 
+\end{equation}
+\begin{equation}
+    {u_x} = \frac{{\partial u\left( {x,y} \right)}}{{\partial x}}
+\end{equation} 
+\begin{equation}
+    {u_y} = \frac{{\partial u\left( {x,y} \right)}}{{\partial y}} 
+\end{equation}
+Generally for domains $\Omega \subset\mathrm{R}^n$ and functions $\Omega$ $\rightarrow$ \begin{math}\mathbb{R}\end{math} depending on the n variables $(x_1, …, x_n)$ $\in$  $\Omega$, n $\geq$ 2, the MSE can be written 
+\begin{equation}
+\sum\limits_{i,j = 1}^n {\left( {{\delta _{ij}} - \frac{{{u_i}{u_j}}}{{\left( {1 + |Du{|^2}} \right)}}} \right){u_{ij}} = 0}
+\end{equation}
+,where ${u_i} = {D_i}u \equiv \frac{{\partial u}}{{\partial {x^i}}}$
+\begin{equation}
+u_{ij} = D_i D_j u   
+\end{equation} Notice that this is a quasilinear elliptic equation: that is, it is linear in the second derivatives, and the coefficient matrix $\left( {{\delta _{ij}} - \frac{{{u_i}{u_j}}}{{\left( {1 + |Du{|^2}} \right)}}} \right)$ is positive definite depending only on the derivatives up to first order. The equation can alternatively be written in “divergence form”
+\begin{equation}
+    \sum\limits_{i = 1}^n {{D_i}} \left( {\frac{{{D_i}u}}{{\sqrt {1 + |Du{|^2}} }}} \right) = 0
+\end{equation}
+which is readily checked using the chain rule and the fact that
+\begin{equation}
+    \frac{\partial }{{\partial {p_j}}}\left( {\frac{p}{{\sqrt {1 + |p{|^2}} }}} \right) = {\left( {1 + |p{|^2}} \right)^{ - 1/2}}\left( {{\delta _{ij}} - \frac{{{p_i}{p_j}}}{{1 + |p{|^2}}}} \right)
+\end{equation}
+Name: Sanidhya Mahale Github ID: Sanidhya-M03
+\\
+\footnote{\bibliographystyle{alpha}
+\bibliography{ref}}

@@ -1,0 +1,76 @@
+\section{Introduction}
+In mathematics, a quartic equation is one which can be expressed as a quartic function equaling zero. The general form of a quartic equation is
+Graph of a polynomial function of degree 4, with its 4 roots and 3 critical points.
+\begin{equation}
+    ax^{4}+bx^{3}+cx^{2}+dx+e=0\
+\end{equation}
+where 
+\begin{equation}
+    a \neq 0 
+\end{equation}
+The quartic is the highest order polynomial equation that can be solved by radicals in the general case (i.e., one in which the coefficients can take any value).
+\subsection{Solving a quartic equation, special cases}
+Consider a quartic equation expressed in the form 
+\begin{equation}
+    a_{0}x^{4}+a_{1}x^{3}+a_{2}x^{2}+a_{3}x+a_{4}=0
+\end{equation}
+
+There exists a general formula for finding the roots to quartic equations, provided the coefficient of the leading term is non-zero. However, since the general method is quite complex and susceptible to errors in execution, it is better to apply one of the special cases listed below if possible.
+\subsection{Degenerate case}
+If the constant term 
+\begin{equation}
+    a^{4} = 0
+\end{equation}
+then one of the roots is 
+\begin{equation}
+    x = 0
+\end{equation}
+and the other roots can be found by dividing by x, and solving the resulting cubic equation,
+\begin{equation}
+     a_{0}x^{3}+a_{1}x^{2}+a_{2}x+a_{3}=0
+\end{equation}
+\subsection{Biquadratic equations}
+A quartic equation where a3 and a1 are equal to 0 takes the form
+\begin{equation}
+    a_{0}x^{4}+a_{2}x^{2}+a_{4}=0
+\end{equation}
+and thus is a biquadratic equation, which is easy to solve: let 
+\begin{equation}
+    z=x^{2}
+\end{equation}
+so our equation turns to
+\begin{equation}
+    a_{0}z^{2}+a_{2}z+a_{4}=0
+\end{equation}
+which is a simple quadratic equation, whose solutions are easily found using the quadratic formula:
+\begin{equation}
+    z={\frac {-a_{2}\pm {\sqrt {a_{2}^{2}-4a_{0}a_{4}}}}{2a_{0}}}
+\end{equation}
+When we've solved it (i.e. found these two z values), we can extract x from them
+\begin{equation}
+    {x_{1}=+{\sqrt {z_{+}}}}
+\end{equation}
+\begin{equation}
+    {x_{2}=-{\sqrt {z_{+}}}}
+\end{equation}
+\begin{equation}
+    {x_{3}=+{\sqrt {z_{-}}}}
+\end{equation}
+\begin{equation}
+      {x_{4}=-{\sqrt {z_{-}}}}
+\end{equation}
+If either of the z solutions were negative or complex numbers, then some of the x solutions are complex numbers.
+\subsection{Quasi-symmetric equations}
+\begin{equation}
+    a_{0}x^{4}+a_{1}x^{3}+a_{2}x^{2}+a_{1}mx+a_{0}m^{2}=0
+\end{equation}
+Steps:
+Divide by \begin{equation}
+    x^2
+\end{equation}
+Use variable change\begin{equation}
+    z = x + m/x
+\end{equation}
+If the quartic has a double root, it can be found by taking the polynomial greatest common divisor with its derivative. Then they can be divided out and the resulting quadratic equation solved.
+\footnote{\url{https://en.wikipedia.org/wiki/Quartic_equation}}
+\end{document}

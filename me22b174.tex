@@ -1,0 +1,30 @@
+\section{me22b174}
+\subsection{Introduction to The Hagen Poiseuille Equation}
+The Hagen–Poiseuille equation\cite{OSTADFAR20161} describes the relationship between pressure, fluidic resistance and flow rate, analogous to voltage, resistance, and current, respectively, in Ohm’s law for electrical circuits $(V=RI)$.\\
+Hagen–Poiseuille equation applies only to laminar flows in a pipe. As in many cases of microfluidic devices, a flow between two parallel plates is also practically important. \\
+
+\subsection{Derivation Of The Equation}
+Consider a cylindrical section of a pipe of radius $R$ and length $L$.The velocity distribution forms a paraboloid distribution. let us consider cylinders with axis along z,same as the paraboloid and of radius r. The Fluid Viscosity being $\mu$
+\begin{equation}
+    V_z = \frac{\Delta P R^2}{4 \mu L}(1-\frac{r^2}{R^2}) 
+    \:, for\: 0\leq r\leq R
+\end{equation}
+\begin{equation}
+     V_max = \frac{\Delta P R^2}{4 \mu L} \:(r=R) 
+\end{equation}
+\begin{equation}
+    Now,\: \Bar{V} = \frac{1}{2} V ,\: \Bar{V}\: being\: the \:average\: velocity
+\end{equation}
+The Volumetric flow rate(Q) equals cross section area multiplied by average velocity ($Q = \Bar{V}A$), So,
+\begin{equation}\label{eqn}
+   \Delta P = {\frac{8\mu L}{\pi R^4}} Q  \\ 
+\end{equation}
+
+This equation\ref{eqn} is known to be the Posieuilles equation
+\\
+\begin{flushleft}
+    Name- Om Mahajan\\
+    Github ID - om-mahajan
+\end{flushleft}
+\footnote{\bibliography{me22b174}}
+\\
