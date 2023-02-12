@@ -1,0 +1,44 @@
+\section{ME22B136}
+\subsection{Basic Introduction}
+Whenever in the field of thermodynamics we look in the control volume analysis,we come across the term \textbf{\textit{Energy flow Equation}}.\\
+\subsection{Unsteady Flow Energy Equation}
+The fluid that enters or leaves has an amount of energy per unit mass given by \footnote{\url{https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node19.html\#:~:text=The\%20first\%20law\%20of\%20thermodynamics\%20can\%20be\%20written,energy\%20flow\%20into\%20or\%20out\%20of\%20the\%20volume.}}
+\begin{equation}
+    E_{cv} = U + \frac{v^2}{2} + gz
+\end{equation}
+The simple energy equation which is written as follows just comes from simple energy conservation...
+\begin{equation}
+    \dot E_{cv} = \dot Q - \dot W + \dot m_i(h_i + gz_i + \frac{v_i^2}{2}) - \dot m_e(h_e + gz_e + \frac{v_e^2}{2})
+\end{equation}
+This is the form in which the first law can be conveniently used for a control volume
+analysis. This is also known as the Unsteady Flow Energy Equation (UFEE).\\
+Fluid enters at the rate of $\dot m_i$ kg/s and leaves
+at the rate of $\dot m_e$ kg/s, where $\dot m_i$ need not necessarily be equal to $\dot m_e$. Subscripts i and e here denote inlet and exit respectively.
+\begin{itemize}
+    \item $\dot E_cv$ represents net rate of change energy in the CV.
+    \item $\dot Q$ represents net heat flow of the CV.
+    \item $\dot W$ represents net work done per unit time.
+    \item h,z,v represent enthalpy,elevation and velocity respectively.
+\end{itemize}
+\subsection{Steady Flow Equation}
+Now if deeply divide the CV analysis into various sections we find this section as an integral part of CV analysis.In this case the net mass flow rate flowing in the CV is equal to the exit mass flow rate.Also the net change in energy becomes equal to zero so $dot E_cv$ becomes zero.So, we assume the following assumption:
+\footnote{FUNDAMENTALS OF ENGINEERING THERMODYNAMICS,V. Babu}
+\begin{equation}
+    \dot m_i = \dot m_e = \dot m 
+\end{equation}
+So,this results in the following output as it can be clearly seen:
+\begin{equation}
+    \dot m_i - \dot m_e = 0
+\end{equation}
+Now if we use these conditions in equation(1) we can extract the following equation
+\begin{equation}   
+    \dot Q - \dot W + \dot m[(h_i + gz_i + \frac{v_i^2}{2})-(h_e + gz_e + \frac{v_e^2}{2})] =0
+\end{equation}
+The above equation becomes extremely useful in the control volume analysis in terms of first law analysis.\\
+We can solve enumerous amount of problems using the above equations and hence this becomes extremely useful in the branch of thermodynamics.
+\begin{itemize}
+    \item Name:Vansh Jain
+    \item Github ID :VanshJivavat
+    \item Roll Number : ME22B136
+\end{itemize}
+
