@@ -1,0 +1,55 @@
+\section{Introduction}
+In mathematics, a Diophantine equation is an equation, typically a polynomial equation in two or more unknowns with integer coefficients, such that the only solutions of interest are the integer ones. A linear Diophantine equation equates to a constant the sum of two or more monomials, each of degree one. An exponential Diophantine equation is one in which unknowns can appear in exponents.
+
+Diophantine problems have fewer equations than unknowns and involve finding integers that solve simultaneously all equations. As such systems of equations define algebraic curves, algebraic surfaces, or, more generally, algebraic sets, their study is a part of algebraic geometry that is called Diophantine geometry.
+
+\subsection{linear diophantine equation}
+\begin{equation}
+   ax + by = c
+\end{equation}
+where a, b and c are given integers. The solutions are described by the following theorem:
+
+    This Diophantine equation has a solution (where x and y are integers) if and only if c is a multiple of the greatest common divisor of a and b. Moreover, if (x, y) is a solution, then the other solutions have the form (x + kv, y − ku), where k is an arbitrary integer, and u and v are the quotients of a and b (respectively) by the 
+greatest common divisor of a and b.
+
+proof:If d is this greatest common divisor, Bézout's identity asserts the existence of integers e and f such that 
+\begin{equation}
+    ae + bf = d.
+\end{equation}   
+    If c is a multiple of d, then 
+\begin{equation}     
+    c = dh 
+\end{equation}
+    for some integer h, and (eh, fh) is a solution. On the other hand, for every pair of integers x and y, the greatest common divisor d of a and b divides ax + by. Thus, if the equation has a solution, then c must be a multiple of d. If 
+\begin{equation}
+     a = ud  
+\end{equation}    
+\begin{equation}
+    b = vd
+\end{equation}
+    then for every solution (x, y), we have
+\begin{equation}
+    a(x + kv) + b(y − ku) = ax + by + k(av − bu) = ax + by + k(udv − vdu) = ax + by,
+\end{equation}
+showing that (x + kv, y − ku) is another solution. Finally, given two solutions such that 
+\begin{equation}
+    ax1 + by1 = ax2 + by2 = c,
+\end{equation}
+one deduces that 
+\begin{equation}
+    u(x2 − x1) + v(y2 − y1) = 0
+\end{equation}
+As u and v are coprime, Euclid's lemma shows that v divides x2 − x1, and thus that there exists an integer k such that
+\begin{equation}
+    x2 − x1 = kv
+\end{equation}
+\begin{equation}
+    y2 − y1 = −ku
+\end{equation} 
+which completes the proof.
+
+\footnote{
+\url{https://en.wikipedia.org/wiki/Diophantine_equation}}
+
+
+\end{document}

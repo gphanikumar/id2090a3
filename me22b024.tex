@@ -1,0 +1,38 @@
+\section{me22b024}
+Faà di Bruno’s formula gives an explicit expression for calculating the  $ n^{th} $  derivative of a composition of two single variable functions. Specifically, let $g(x)$ be defined on a neighborhood
+of $x_0$ and have derivatives up to order n at $x_0$; let $f(y)$ be defined on a neighborhood of $y_0 = g(x_0)$
+and have derivatives up to order n at $y_0$. Then the $n^(th)$ derivative of the composition $h(x) = f (g(x))$
+at $x_0$ is given by the formula
+
+\[
+    h_n = \sum_{k=1}^{n} f_k \sum_{p(n,k)} n! \prod_{i=1}^{n} \dfrac{g_i^{\lambda_i}}{(\lambda_i!)(i!)^{(\lambda_i)}}
+\]
+
+In the above expression, we set
+
+\[
+    h_n = \frac{d^n }{dx^n} h(x_0),\;\; f_k = \frac{d^k }{dy^k} h(x_0),\;\; g_i = \frac{d^i }{dx^i} g(x_0)
+\]
+
+and
+
+\[ 
+    p(n,k) = \left\{(\lambda_1,....,\lambda_n) : \lambda_i \in N_0,\; \sum_{i=1}^{n} \lambda_i=k,\; \sum_{i=1}^{n} i\lambda_i=n\right\} 
+\]
+
+with $N_0$ as the set of non-negative integers.\\
+
+\begin{flushleft}
+Name: Pranav Raghu Chandran\\
+GitHubID: Impaler343
+\end{flushleft}
+
+\footnote{Thomas H. Savits,
+Some statistical applications of Faa di Bruno,
+Journal of Multivariate Analysis,
+Volume 97, Issue 10,
+2006,
+Pages 2131-2140,
+ISSN 0047-259X,
+doi: 10.1016/j.jmva.2006.03.001,
+Keywords: Faa di Bruno; Hermite polynomials; Edgeworth expansions}
